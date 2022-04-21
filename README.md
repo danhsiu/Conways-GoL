@@ -11,6 +11,9 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 
 The initial pattern constitutes the 'seed' of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed — births and deaths happen simultaneously, and the discrete moment at which this happens is sometimes called a tick. (In other words, each generation is a pure function of the one before.) The rules continue to be applied repeatedly to create further generations.
 
-## Hypothetical Edge Cases
+## Interesting follow-ups to think about!
 
-* What happens if the input file is 1tb? How can we import that into memory? Can we use generators to output graphics in realtime and throwout old garbage values for that instant? 
+1. What happens if the input file is 1tb? How can we import that into memory? Can we use generators to output graphics in realtime and throwout old garbage values for that instant? 
+    * If we have an extremely sparse matrix, it would make much more sense to actually save the location of only the live cells and then apply the 4 rules accordingly using only these live cells!
+2. Similar to molecular dynamics simulations (i.e., LAMMPS), what would happen if we need even MORE integer space? What would this look like in a multi-GPU/multi-CPU environment?
+    * Perhaps we could use an OpenMPI, SLURM(i.e., HPC Job Scheduler), WareWulf (cluster manager) to manage the configuration an extremely-exetremely large board set-up!
