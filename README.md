@@ -10,3 +10,7 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 4. Any dead cell with exactly three live neighbours will come to life.
 
 The initial pattern constitutes the 'seed' of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed — births and deaths happen simultaneously, and the discrete moment at which this happens is sometimes called a tick. (In other words, each generation is a pure function of the one before.) The rules continue to be applied repeatedly to create further generations.
+
+## Hypothetical Edge Cases
+
+* What happens if the input file is 1tb? How can we import that into memory? Can we use generators to output graphics in realtime and throwout old garbage values for that instant? 
