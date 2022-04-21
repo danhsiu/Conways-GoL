@@ -15,5 +15,5 @@ The initial pattern constitutes the 'seed' of the system. The first generation i
 
 1. What happens if the input file is 1tb? How can we import that into memory? Can we use generators to output graphics in realtime and throw-out old garbage values for that instant? 
     * If we have an extremely sparse matrix, it would make much more sense to actually save the location of only the live cells and then apply the 4 rules accordingly using only these live cells!
-2. Similar to molecular dynamics simulators (i.e., LAMMPS) or multiphysics simulators (i.e., MOOSE), what would happen if we need even MORE integer space? What would this look like in a multi-GPU/multi-CPU environment?
-    * Perhaps we could use an OpenMPI, HPC MPI Job Schedulers (e.g., SLURM, MPICH, MVAPICH), WareWulf (cluster manager) to manage the configuration an exascale-large board set-up!
+2. Say we use Conway's GoL as a forecasting simulator where a small input is needed, and the simulation needs to be ran to produce a coherent picture of what happens over a 1-million years of compute time. In this case, what would happen if we need even MORE integer space? What would this look like in a multi-GPU/multi-CPU environment?
+    * Perhaps we could use an OpenMPI, HPC MPI Job Schedulers (e.g., SLURM, MPICH, MVAPICH), WareWulf (cluster manager) to manage the configuration an exascale-large board simulation!
