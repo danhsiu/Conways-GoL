@@ -1,4 +1,4 @@
-# Conways-GoL
+# Conways Game of Life on Python, CUDA, and Metal
 
 Here we implement Conway's game of life in 64-bit integer space (2^64-1). According to "https://conwaylife.com/wiki/Conway%27s_Game_of_Life", Conway's Game of Life is "actually a zero-player game, meaning that its evolution is determined by its initial state, needing no input from human players. One interacts with the Game of Life by creating an initial configuration and observing how it evolves."
 
