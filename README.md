@@ -15,7 +15,7 @@ The initial pattern constitutes the 'seed' of the system. The first generation i
 
 **We need to implement Conway's GoL in 64-bit integer space (2^64-1). But what happens if we need more integer-space?**
 
-Since Python can store arbitrarily large integers only bounded by system RAM lets use Python as a testbed. We could use 'long long' in C++/C, but any board space larger would not fit on modern CPU registry size (x64), and would require like [GMP](https://gmplib.org/).
+Since Python can store arbitrarily large integers only bounded by system RAM lets use Python as a testbed. We could use 'long long' in C++/C, but any board space larger that 64-bit space would not fit on modern CPU registry size (x64). We could use a library like [GMP](https://gmplib.org/) to accept arbitrary precision integers.
 
 ## Interesting follow-ups to think about!
 
