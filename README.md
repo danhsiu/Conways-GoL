@@ -1,6 +1,6 @@
-# Conways Game of Life on Python, CUDA, and Metal
+# Conways Game of Life on Python
 
-Here we implement Conway's game of life in 64-bit integer space (2^64-1). According to "https://conwaylife.com/wiki/Conway%27s_Game_of_Life", Conway's Game of Life is "actually a zero-player game, meaning that its evolution is determined by its initial state, needing no input from human players. One interacts with the Game of Life by creating an initial configuration and observing how it evolves."
+According to "https://conwaylife.com/wiki/Conway%27s_Game_of_Life", Conway's Game of Life (GoL) is "actually a zero-player game, meaning that its evolution is determined by its initial state, needing no input from human players. One interacts with the Game of Life by creating an initial configuration and observing how it evolves."
 
 The universe of the Game of Life is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead. Every cell interacts with its eight neighbours, which are the cells that are directly horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 
@@ -10,6 +10,12 @@ The universe of the Game of Life is an infinite two-dimensional orthogonal grid 
 4. **Reproduction:** Any dead cell with exactly three live neighbours will come to life.
 
 The initial pattern constitutes the 'seed' of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed — births and deaths happen simultaneously, and the discrete moment at which this happens is sometimes called a tick. (In other words, each generation is a pure function of the one before.) The rules continue to be applied repeatedly to create further generations.
+
+## Objectives
+
+**We need to implement Conway's GoL in 64-bit integer space (2^64-1). But what happens if we need more integer-space?**
+
+Since Python can store arbitrarily large integers only bounded by system RAM lets use Python as a testbed. We could use 'long long' in C++/C, but any board space larger would not fit on CPU registry size (x64).
 
 ## Interesting follow-ups to think about!
 
