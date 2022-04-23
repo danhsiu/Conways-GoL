@@ -4,6 +4,8 @@
 **We need to implement Conway's GoL in 64-bit integer space!**
 
 1. To create a program to play Conway's GoL, we can use Python3 as a testbed for exploring algorithmic solutions! Since Python can store arbitrarily large integers only bounded by system RAM it serves as an easy language for starters.
+     
+     
      *We could use C/C++, though any board space larger that 64-bit space would not fit on modern CPU registry size (x64). We could use a library like [GMP](https://gmplib.org/) to accept arbitrary precision integers for future development.*
 
 A trivial solution following the execution of Conway's GoL can be found in the "1. Python/ConwaysGoL.ipynb" folder. 
