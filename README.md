@@ -1,12 +1,12 @@
-# Conways Game of Life on Python
+# Conway's Game of Life on Python
 ## Objectives & Approach
 
-**We need to implement Conway's GoL in 64-bit integer space**
+**We need to implement Conway's GoL in 64-bit integer space!**
 
-Since Python can store arbitrarily large integers only bounded by system RAM lets use it as a testbed. We could use C/C++, though any board space larger that 64-bit space would not fit on modern CPU registry size (x64). We could use a library like [GMP](https://gmplib.org/) to accept arbitrary precision integers for future development.
+To create a program to play Conway's GoL, we can use Python3 as a testbed for exploring algorithmic solutions! Since Python can store arbitrarily large integers only bounded by system RAM it serves as an easy language for starters.
+     *We could use C/C++, though any board space larger that 64-bit space would not fit on modern CPU registry size (x64). We could use a library like [GMP](https://gmplib.org/) to accept arbitrary precision integers for future development.*
 
-
-
+A trivial solution  generations of 
 
 ## Interesting follow-ups to think about!
 
