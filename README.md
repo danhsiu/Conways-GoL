@@ -17,7 +17,6 @@ The initial pattern constitutes the 'seed' of the system. The first generation i
 Since Python can store arbitrarily large integers only bounded by system RAM lets use it as a testbed. 
 
 ## Approach
-**But wait
 
 
 
