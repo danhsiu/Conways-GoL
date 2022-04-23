@@ -1,6 +1,5 @@
 # Conways Game of Life on Python
-
-According to [conwaylife.com](https://conwaylife.com/wiki/Conway%27s_Game_of_Life), Conway's Game of Life (GoL) is "actually a zero-player game, meaning that its evolution is determined by its initial state, needing no input from human players. One interacts with the Game of Life by creating an initial configuration and observing how it evolves."
+## Rules
 
 The universe of the Game of Life is an infinite two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead. Every cell interacts with its eight neighbours, which are the cells that are directly horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
 
@@ -13,9 +12,14 @@ The initial pattern constitutes the 'seed' of the system. The first generation i
 
 ## Objectives
 
-**We need to implement Conway's GoL in 64-bit integer space (2^64-1). But what happens if we need more integer-space?**
+**We need to implement Conway's GoL in 64-bit integer space, or (2^64-1)**
 
-Since Python can store arbitrarily large integers only bounded by system RAM lets use Python as a testbed. We could use 'long long' in C++/C, but any board space larger that 64-bit space would not fit on modern CPU registry size (x64). We could use a library like [GMP](https://gmplib.org/) to accept arbitrary precision integers.
+Since Python can store arbitrarily large integers only bounded by system RAM lets use it as a testbed. 
+
+## Approach
+**But wait
+
+
 
 ## Interesting follow-ups to think about!
 
